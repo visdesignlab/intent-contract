@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - stable
+dist: xenial
+sudo: false
+
+notifications:
+  email: false
+
+script:
+  - yarn install
+  - yarn run lint
+  - yarn run build
