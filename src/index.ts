@@ -1,22 +1,31 @@
-export enum VisualizationType {
+enum VisualizationType {
     ScatterPlot = 'ScatterPlot',
     ScatterPlotMatrix = 'ScatterPlotMatrix',
     Table = 'Table',
 }
 
-export enum InteractionType {
-    PointSelection = 'PointSelection',
-    RectangularSelection = 'RectangularSelection',
-    ChangeAxis = 'ChangeAxis',
+export interface PointSelection {
+    dataIds: Array<string>;
+}
+
+export interface RectangularSelection {
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+    dataIds: Array<string>;
+}
+
+export interface ChangeAxis {
+    dimensions: Array<string>;
 }
 
 export interface Interaction {
-    dataIds: Array<string>;
-    visualizationType: VisualizationType
-    dimensions: Array<string>;
-    interactionType: InteractionType;
+    visualizationType: VisualizationType;
+    interactionType: ChangeAxis | PointSelection | RectangularSelection;
 }
 
-export interface InteractionHistory {
-    interactions: Array<Interaction>;
-}
+export type InteractionHistory = Array<Interaction>;
+
+export { VisualizationType };
+
