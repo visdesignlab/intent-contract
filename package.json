@@ -1,6 +1,6 @@
 {
   "name": "intent-contract",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Defines the types for interacting with the intent inference system.",
   "author": "Jochen Görtler",
   "license": "Apache-2.0",
@@ -16,7 +16,7 @@
     "dev": "rollup -c -w",
     "lint": "eslint --config .eslintrc.json --ext .js,.html,.ts src",
     "lint-fix": "eslint --fix --config .eslintrc.json --ext .js,.html,.ts src",
-    "python-bindgen": "quicktype src/index.ts -o dist/Interactions.py --python-version 3.7",
+    "python-bindgen": "quicktype src/index.ts -o dist/interactions.py --python-version 3.7",
     "bindgen": "npm-run-all --sequential build python-bindgen"
   },
   "devDependencies": {

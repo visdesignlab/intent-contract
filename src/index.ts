@@ -4,11 +4,15 @@ enum VisualizationType {
     Table = 'Table',
 }
 
-export interface PointSelection {
+interface Selection {
+    dimensions: Array<string>;
+}
+
+export interface PointSelection extends Selection {
     dataIds: Array<string>;
 }
 
-export interface RectangularSelection {
+export interface RectangularSelection extends Selection {
     x: number;
     y: number;
     width: number;

@@ -13,7 +13,7 @@ To create the Python bindings you can use the following command:
 yarn run bindgen
 ```
 
-The bindings will end up in `dist/Interactions.py`.
+The bindings will end up in `dist/interactions.py`.
 
 ## Development
 
