@@ -1,11 +1,14 @@
 {
   "name": "@visdesignlab/intent-contract",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Defines the types for interacting with the intent inference system.",
   "author": "Jochen Görtler",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/visdesignlab/intent-contract.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "MIT",
   "main": "dist/index.js",
