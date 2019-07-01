@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/visdesignlab/intent-contract.svg?branch=master)](https://travis-ci.org/visdesignlab/intent-contract)
+
 ## Model
 
 The users interaction with the system are modelled as an array of interactions `Array<Interactions>`.
