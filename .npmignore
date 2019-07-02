@@ -1,9 +1,8 @@
-.*
 **/tsconfig.json
 **/webpack.config.js
 node_modules
 src
 .github
 .test
-package-lock.json
+yarn.json
 
