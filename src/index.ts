@@ -1,7 +1,8 @@
 enum VisualizationType {
-    ScatterPlot = 'ScatterPlot',
-    ScatterPlotMatrix = 'ScatterPlotMatrix',
-    Table = 'Table',
+    ScatterPlot = "ScatterPlot",
+    ScatterPlotMatrix = "ScatterPlotMatrix",
+    Table = "Table",
+    None = "None"
 }
 
 interface Selection {
@@ -32,4 +33,3 @@ export interface Interaction {
 export type InteractionHistory = Array<Interaction>;
 
 export { VisualizationType };
-
