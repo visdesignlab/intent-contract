@@ -23,4 +23,5 @@ deploy:
   on:
     tags: true
     repo: visdesignlab/intent-contract
+    branch: master
 
