@@ -1,6 +1,6 @@
 {
   "name": "@visdesignlab/intent-contract",
-  "version": "2.2.3",
+  "version": "3.0.0",
   "description": "Defines the types for interacting with the intent inference system.",
   "author": "Jochen Görtler",
   "repository": {
