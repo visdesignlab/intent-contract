@@ -7,18 +7,23 @@ enum VisualizationType {
 
 interface Selection {
     dimensions: Array<string>;
-}
-
-export interface PointSelection extends Selection {
     dataIds: Array<string>;
 }
 
+export interface PointSelection extends Selection {
+    kind: "selection";
+}
+
+export interface PointDeselection extends Selection {
+    kind: "deselection";
+}
+
 export interface RectangularSelection extends Selection {
+    brushId: string;
     left: number;
     top: number;
     right: number;
     bottom: number;
-    dataIds: Array<string>;
 }
 
 export interface ChangeAxis {
@@ -27,7 +32,11 @@ export interface ChangeAxis {
 
 export interface Interaction {
     visualizationType: VisualizationType;
-    interactionType: ChangeAxis | PointSelection | RectangularSelection;
+    interactionType:
+    | ChangeAxis
+    | PointSelection
+    | PointDeselection
+    | RectangularSelection;
 }
 
 export type InteractionHistory = Array<Interaction>;
