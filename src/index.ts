@@ -14,10 +14,10 @@ export interface PointSelection extends Selection {
 }
 
 export interface RectangularSelection extends Selection {
-    x: number;
-    y: number;
-    width: number;
-    height: number;
+    left: number;
+    top: number;
+    right: number;
+    bottom: number;
     dataIds: Array<string>;
 }
 
