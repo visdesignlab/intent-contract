@@ -7,7 +7,7 @@ enum VisualizationType {
 
 interface Selection {
     dimensions: Array<string>;
-    dataIds: Array<string>;
+    dataIds: Array<number>;
 }
 
 export interface PointSelection extends Selection {
