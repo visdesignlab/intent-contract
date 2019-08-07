@@ -44,6 +44,7 @@ export type InteractionHistory = Array<Interaction>;
 export interface Prediction {
     rank: number;
     intent: string;
+    info?: object;
 }
 
 export { VisualizationType };
