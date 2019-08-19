@@ -30,10 +30,15 @@ export interface ChangeAxis {
     dimensions: Array<string>;
 }
 
+export interface ClearAllSelections extends Selection {
+    kind: "clearall";
+}
+
 export interface Interaction {
     visualizationType: VisualizationType;
     interactionType:
     | ChangeAxis
+    | ClearAllSelections
     | PointSelection
     | PointDeselection
     | RectangularSelection;
