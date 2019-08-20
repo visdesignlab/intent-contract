@@ -49,6 +49,7 @@ export type InteractionHistory = Array<Interaction>;
 export interface Prediction {
     rank: number;
     intent: string;
+    dataIds?: Array<number>;
     info?: object;
 }
 
