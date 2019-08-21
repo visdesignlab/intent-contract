@@ -50,6 +50,7 @@ export interface Prediction {
     rank: number;
     intent: string;
     dataIds?: Array<number>;
+    dimensions: Array<string>;
     info?: object;
 }
 
