@@ -55,7 +55,7 @@ export interface Prediction {
 
 export interface PredictionSet {
     dimensions: Array<string>;
-    selectedIds: Array<string>;
+    selectedIds: Array<number>;
     predictions: Array<Prediction>;
 }
 
