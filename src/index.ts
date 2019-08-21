@@ -50,8 +50,13 @@ export interface Prediction {
     rank: number;
     intent: string;
     dataIds?: Array<number>;
-    dimensions: Array<string>;
     info?: object;
+}
+
+export interface PredictionSet {
+    dimensions: Array<string>;
+    selectedIds: Array<string>;
+    predictions: Array<Prediction>;
 }
 
 export { VisualizationType };
