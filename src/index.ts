@@ -51,6 +51,7 @@ export interface Prediction {
     intent: string;
     dataIds?: Array<number>;
     info?: object;
+    suggestion?: Array<Prediction>;
 }
 
 export interface PredictionSet {
