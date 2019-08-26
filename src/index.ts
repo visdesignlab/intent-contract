@@ -34,6 +34,16 @@ export interface ClearAllSelections extends Selection {
     kind: "clearall";
 }
 
+export enum MultiBrushBehavior {
+    INTERSECTION = "INTERSECTION",
+    UNION = "UNION"
+}
+
+export interface PredictionRequest {
+    multiBrushBehavior: MultiBrushBehavior;
+    interactionHistory: InteractionHistory;
+}
+
 export interface Interaction {
     visualizationType: VisualizationType;
     interactionType:
