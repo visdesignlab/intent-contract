@@ -47,11 +47,11 @@ export interface PredictionRequest {
 export interface Interaction {
     visualizationType: VisualizationType;
     interactionType:
-    | ChangeAxis
-    | ClearAllSelections
-    | PointSelection
-    | PointDeselection
-    | RectangularSelection;
+        | ChangeAxis
+        | ClearAllSelections
+        | PointSelection
+        | PointDeselection
+        | RectangularSelection;
 }
 
 export type InteractionHistory = Array<Interaction>;

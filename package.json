@@ -1,41 +1,41 @@
 {
-    "name": "@visdesignlab/intent-contract",
-    "version": "10.0.0",
-    "description": "Defines the types for interacting with the intent inference system.",
-    "author": "Jochen Görtler",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/visdesignlab/intent-contract.git"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "license": "MIT",
-    "main": "dist/index.js",
-    "module": "dist/index.es.js",
-    "types": "dist/index.d.ts",
-    "files": [
-        "dist"
-    ],
-    "scripts": {
-        "build": "rollup -c",
-        "dev": "rollup -c -w",
-        "lint": "eslint --config .eslintrc.json --ext .js,.html,.ts src",
-        "lint-fix": "eslint --fix --config .eslintrc.json --ext .js,.html,.ts src",
-        "python-bindgen": "quicktype src/index.ts -o dist/interactions.py --python-version 3.7",
-        "bindgen": "npm-run-all --sequential build python-bindgen"
-    },
-    "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^1.11.0",
-        "@typescript-eslint/parser": "^1.11.0",
-        "eslint": "^6.0.1",
-        "lodash": "^4.17.13",
-        "npm-run-all": "^4.1.5",
-        "quicktype": "^15.0.194",
-        "rollup": "^1.16.2",
-        "rollup-plugin-eslint": "^7.0.0",
-        "rollup-plugin-terser": "^5.0.0",
-        "rollup-plugin-typescript2": "^0.21.2",
-        "typescript": "^3.5.2"
-    }
+  "name": "@visdesignlab/intent-contract",
+  "version": "10.0.0",
+  "description": "Defines the types for interacting with the intent inference system.",
+  "author": "Jochen Görtler",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/visdesignlab/intent-contract.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "lint": "eslint --config .eslintrc.json --ext .js,.html,.ts src",
+    "lint-fix": "eslint --fix --config .eslintrc.json --ext .js,.html,.ts src",
+    "python-bindgen": "quicktype src/index.ts -o dist/interactions.py --python-version 3.7",
+    "bindgen": "npm-run-all --sequential build python-bindgen"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "eslint": "^6.0.1",
+    "lodash": "^4.17.13",
+    "npm-run-all": "^4.1.5",
+    "quicktype": "^15.0.194",
+    "rollup": "^1.16.2",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-terser": "^5.0.0",
+    "rollup-plugin-typescript2": "^0.21.2",
+    "typescript": "^3.5.2"
+  }
 }
