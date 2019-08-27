@@ -1,7 +1,7 @@
 enum VisualizationType {
-    ScatterPlot = "ScatterPlot",
-    ScatterPlotMatrix = "ScatterPlotMatrix",
-    Table = "Table",
+    ScatterPlot = "Scatterplot",
+    ScatterPlotMatrix = "Scatterplot Matrix",
+    ParallelCoordinatePlot = "Parallel Coordinate Plot",
     None = "None"
 }
 
